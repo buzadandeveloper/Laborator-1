@@ -1,0 +1,24 @@
+/* Footer */
+body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 6.87em;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+    margin: auto;
+    width: 100%;
+    background-color: #f8f8f8;
+    font-family: "Lora", sans-serif;
+    position: absolute;
+    bottom: 0;
+}
+footer p,
+footer strong {
+    color: var(--grey-color-1);
+}

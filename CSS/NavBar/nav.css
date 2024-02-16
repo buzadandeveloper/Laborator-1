@@ -1,0 +1,20 @@
+/* Navbar Container */
+header {
+    background-color: #f8f8f8;
+    display: flex;
+}
+header img {
+    width: 3.2em;
+}
+.container-nav,
+.container-main {
+    width: 70%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}

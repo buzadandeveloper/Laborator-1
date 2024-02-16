@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Typography and Color */
+:root {
+    --grey-color: #707070;
+    --grey-color-1: #474747;
+    --blue-color: #1792d2;
+    --dark-blue-color: #143774;
+}
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+}
+h1 {
+    font-size: 2rem;
+    color: var(--dark-blue-color);
+    font-family: "Lora", sans-serif;
+}
+h2 {
+    color: var(--dark-blue-color);
+    font-family: "Lora", sans-serif;
+    font-size: 1.4rem;
+}
+h3 {
+    font-size: 1rem;
+    color: black;
+}
+p{
+    font-size: 1rem;
+    color: black;
+}
+main p a {
+    color: var(--blue-color);
+}
+main p a:hover {
+    border-bottom: 1px solid var(--blue-color);
+    
+}

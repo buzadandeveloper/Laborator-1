@@ -1,0 +1,48 @@
+h1{
+    margin: 1em 0;
+}
+.container-main h2 {
+    text-align: start;
+}
+.widget-bar h2 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    gap: 1em;
+}
+main img {
+   width: 50%;
+   border-radius: 12px;
+}
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.info-box-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.info-box-1 img {
+    align-self: center;
+}
+.container-2 {
+    flex-direction: column;
+}
+table {
+    margin-top: 1em;
+    background-color: black;
+}
+table th {
+    padding: 1em;
+    background-color: rgb(241, 251, 255);
+}
+table td {
+    padding: 0.5em;
+    background-color:rgb(255, 255, 255);
+}
+.info-box:last-child {
+    margin-bottom: 2em;
+}

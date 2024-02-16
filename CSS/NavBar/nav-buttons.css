@@ -1,0 +1,15 @@
+.nav-buttons {
+    display: flex;
+    gap: 2em;
+}
+.nav-buttons li {
+    list-style-type: none;
+    color: var(--grey-color-1);
+}
+a {
+    text-decoration: none;
+    color: var(--grey-color-);
+}
+.nav-buttons li:hover {
+    color: var(--blue-color);
+}
