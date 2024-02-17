@@ -1,0 +1,15 @@
+const newsList = document.querySelector(".news-container");
+const divNews = document.createElement("div");
+divNews.classList.add("news");
+const aNews = document.createElement("a");
+aNews.setAttribute("href", "#");
+const imgNews = document.createElement("img");
+imgNews.setAttribute("src", "/image/neural-link.jpg");
+imgNews.setAttribute("alt", "brain-chip-img");
+aNews.append(imgNews);
+const h3News = document.createElement("h3");
+h3News.textContent = "Neuralink a realizat primul implant în creierul uman";
+divNews.append(aNews);
+divNews.append(h3News);
+newsList.prepend(divNews);
+console.log(newsList);
