@@ -4,7 +4,7 @@
 }
 .nav-buttons li {
     list-style-type: none;
-    color: var(--grey-color-1);
+    /* color: var(--grey-color-1); */
 }
 a {
     text-decoration: none;

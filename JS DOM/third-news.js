@@ -24,12 +24,12 @@ divInfoTextThird.append(h3Title);
 divThirdNews.append(divInfoTextThird);
 
 
-newsThird.append(divThirdNews);
+// newsThird.append(divThirdNews);
 // ------------------------------------------------------------------------------------------------
  newsThird = document.querySelector(".container-third");
 
- divThirdNews = document.createElement("div");
-divThirdNews.classList.add("news");
+ let divThirdNews2 = document.createElement("div");
+divThirdNews2.classList.add("news");
 
  aImgThirdNews = document.createElement("a");
 aImgThirdNews.setAttribute("href", "#");
@@ -39,7 +39,7 @@ imgThirdNews.setAttribute("src", "/image/elon-musk.jpg");
 imgThirdNews.setAttribute("alt", "elon-musk-img");
 
 aImgThirdNews.append(imgThirdNews);
-divThirdNews.append(aImgThirdNews);
+divThirdNews2.append(aImgThirdNews);
 
 let divInfoTextThird2 = document.createElement("div");
 divInfoTextThird2.classList.add("info-text");
@@ -48,15 +48,15 @@ h3Title = document.createElement("h3");
 h3Title.textContent = "Ce avere are Elon Musk. Câţi bani câştigă fondatorul Tesla și SpaceX";
 
 divInfoTextThird2.append(h3Title);
-divThirdNews.append(divInfoTextThird2);
+divThirdNews2.append(divInfoTextThird2);
 
 
-newsThird.append(divThirdNews);
+// newsThird.append(divThirdNews2);
 // ------------------------------------------------------------------------------------------------
 newsThird = document.querySelector(".container-third");
 
-divThirdNews = document.createElement("div");
-divThirdNews.classList.add("news");
+let divThirdNews3 = document.createElement("div");
+divThirdNews3.classList.add("news");
 
 aImgThirdNews = document.createElement("a");
 aImgThirdNews.setAttribute("href", "#");
@@ -66,7 +66,7 @@ imgThirdNews.setAttribute("src", "/image/nasa.jpg");
 imgThirdNews.setAttribute("alt", "mars-img");
 
 aImgThirdNews.append(imgThirdNews);
-divThirdNews.append(aImgThirdNews);
+divThirdNews3.append(aImgThirdNews);
 
 let divInfoTextThird3 = document.createElement("div");
 divInfoTextThird3.classList.add("info-text");
@@ -75,16 +75,16 @@ h3Title = document.createElement("h3");
 h3Title.textContent = "Termenul de funcționare a Parcului IT din R. Moldova, extins până în 2035";
 
 divInfoTextThird3.append(h3Title);
-divThirdNews.append(divInfoTextThird3);
+divThirdNews3.append(divInfoTextThird3);
 
 
-newsThird.append(divThirdNews);
+// newsThird.append(divThirdNews3);
 
 // ------------------------------------------------------------------------------------------------
 newsThird = document.querySelector(".container-third");
 
-divThirdNews = document.createElement("div");
-divThirdNews.classList.add("news");
+let divThirdNews4 = document.createElement("div");
+divThirdNews4.classList.add("news");
 
 aImgThirdNews = document.createElement("a");
 aImgThirdNews.setAttribute("href", "#");
@@ -94,7 +94,7 @@ imgThirdNews.setAttribute("src", "/image/bill-gates.jpg");
 imgThirdNews.setAttribute("alt", "bill-gatesimg");
 
 aImgThirdNews.append(imgThirdNews);
-divThirdNews.append(aImgThirdNews);
+divThirdNews4.append(aImgThirdNews);
 
 let divInfoTextThird4 = document.createElement("div");
 divInfoTextThird4.classList.add("info-text");
@@ -103,8 +103,25 @@ h3Title = document.createElement("h3");
 h3Title.textContent = "Bill Gates explică cum inteligența artificială va schimba viața oamenilor";
 
 divInfoTextThird4.append(h3Title);
-divThirdNews.append(divInfoTextThird4);
+divThirdNews4.append(divInfoTextThird4);
 
-newsThird.append(divThirdNews);
+// newsThird.append(divThirdNews4);
+
+
+
+// ---------------------------------------separate into 2 containers-------------------------------------------------
+let thirdOne = document.createElement("div");
+thirdOne.classList.add("third-one");
+
+let thirdTwo = document.createElement("div");
+thirdTwo.classList.add("third-two");
+
+thirdOne.append(divThirdNews);
+thirdOne.append(divThirdNews2);
+thirdTwo.append(divThirdNews3);
+thirdTwo.append(divThirdNews4);
+
+newsThird.append(thirdOne);
+newsThird.append(thirdTwo);
 
 console.log(newsThird);
