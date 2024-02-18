@@ -4,9 +4,7 @@ h1{
 .container-main h2 {
     text-align: start;
 }
-.widget-bar h2 {
-    text-align: center;
-}
+
 .container {
     display: flex;
     gap: 1em;
