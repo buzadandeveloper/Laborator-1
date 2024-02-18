@@ -4,7 +4,8 @@ h1 {
     color: black;
     cursor: pointer;
 }
-h1:hover{
+h1:hover,
+h2:hover{
     color: var(--blue-color) ;
 
 }
@@ -34,8 +35,39 @@ img {
     flex-direction: column;
     gap: 1.5em;
 }
-span {
+.info-main span {
     margin-top: 1.5em;
     color: var(--grey-color);
     font-size: 1rem;
+}
+/* News Line */
+h2 {
+    font-size: 1.1rem;
+    color: black;
+    cursor: pointer;
+}
+.container-second {
+    display: flex;
+    width: 70%;
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+.container-second img {
+    width: 80%;
+    border-radius: 12px;
+}
+.container-second .news {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.info-text span{
+    color: var(--grey-color);
 }
