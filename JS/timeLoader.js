@@ -30,6 +30,23 @@ function timeLoaded(){
     spanTime4.textContent = timeString;
     divInfoText3.append(spanTime4);
 
+    let spanTime5 = document.createElement("span");
+    spanTime5.textContent = timeString;
+    divInfoTextThird.append(spanTime5);
+
+    let spanTime6 = document.createElement("span");
+    spanTime6.textContent = timeString;
+    divInfoTextThird2.append(spanTime6);
+
+    let spanTime7 = document.createElement("span");
+    spanTime7.textContent = timeString;
+    divInfoTextThird3.append(spanTime7);
+
+    let spanTime8 = document.createElement("span");
+    spanTime8.textContent = timeString;
+    divInfoTextThird4.append(spanTime8);
+
+
     
 }
 document.addEventListener("DOMContentLoaded", timeLoaded);
