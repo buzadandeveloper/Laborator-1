@@ -4,7 +4,7 @@ header {
     display: flex;
 }
 header img {
-    width: 3.2em;
+    width: 3em;
 }
 .container-nav,
 .container-main {
@@ -16,7 +16,7 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 0;
+    padding: 0.5em 0;
 }
 
 .nav-links{
@@ -50,9 +50,9 @@ header img {
         transform: translateY(-8px) rotate(-45deg);
     }
     .nav-buttons{
-        position: fixed;
+        position: absolute;
         left: -100%;
-        top:80px;
+        top:60px;
         gap: 0;
         flex-direction: column;
         background-color: #f8f8f8;
