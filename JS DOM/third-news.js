@@ -72,7 +72,7 @@ let divInfoTextThird3 = document.createElement("div");
 divInfoTextThird3.classList.add("info-text");
 
 h3Title = document.createElement("h3");
-h3Title.textContent = "Termenul de funcționare a Parcului IT din R. Moldova, extins până în 2035";
+h3Title.textContent = "NASA caută patru voluntari pentru o simulare de un an a vieţii pe Marte";
 
 divInfoTextThird3.append(h3Title);
 divThirdNews3.append(divInfoTextThird3);
