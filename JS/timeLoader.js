@@ -1,5 +1,5 @@
 function timeLoaded(){
-    let publishDate = new Date("2024-02-18 11:30");
+    let publishDate = new Date("2024-02-19 11:30");
     let currentDate = new Date();
     const timeDiffMinutes = Math.floor((currentDate - publishDate)/(1000 * 60));
     if(timeDiffMinutes >= 60){
