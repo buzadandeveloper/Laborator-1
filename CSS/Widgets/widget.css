@@ -7,7 +7,7 @@
 .news {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid var(--grey-color);
+    border-bottom: 1px solid rgb(231, 228, 227);
     margin-bottom: 1em;
     padding-bottom: 1em;
     
@@ -75,7 +75,11 @@ h3:hover {
     
     .news h3 {
         width: 75%;
-        
     }
     
+}
+@media (max-width: 600px) {
+    h3 {
+        font-size: 0.8rem;
+    }
 }

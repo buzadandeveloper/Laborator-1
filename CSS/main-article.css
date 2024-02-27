@@ -13,6 +13,8 @@ main {
 }
 .container-main:last-child {
     margin-bottom: 2em;
+    border-top: 1.5px solid rgb(231, 228, 227);
+    padding-top: 1em;
 }
 main img {
     width: 70%;
@@ -38,17 +40,49 @@ main img {
 .info-content p {
     width: 90%;
 }
+
+
 @media (max-width: 1000px) {
     h1 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     p {
         font-size: 0.9rem;
     }
+    .container-main:last-child {
+        border: none;
+    }
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 1.25rem;
+    }
     .first {
         flex-direction: column;
+    }
+    .container-main:last-child {
+        flex-direction: column;
+    }
+    .info-content {
+        width: 80%;
+        align-self: center;
+        border: none;
+        border-top: 1.5px  solid rgb(231, 228, 227);
+    }
+    .info-content:first-child {
+        border: none;
+    }
+}
+
+@media (max-width: 600px){
+    h1 {
+       font-size: 1.1rem;
+       width: 100%;
+       max-width: 300px;
+       align-self: center;
+    }
+    p{
+        font-size: 0.8rem;
     }
 }
