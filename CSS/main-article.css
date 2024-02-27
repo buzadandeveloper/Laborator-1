@@ -1,88 +1,87 @@
 /* Main Index Container */
 h1 {
-    text-align: center;
-    margin: 1em 0;
+  text-align: center;
+  margin: 1em 0;
 }
 main {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 .container-main {
-    display: flex;
+  display: flex;
 }
 .container-main:last-child {
-    margin-bottom: 2em;
-    border-top: 1.5px solid rgb(231, 228, 227);
-    padding-top: 1em;
+  margin-bottom: 2em;
+  border-top: 1.5px solid rgb(231, 228, 227);
+  padding-top: 1em;
 }
 main img {
-    width: 70%;
+  width: 70%;
 }
 .info-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 40%;
-    align-items: center;
-    padding: 1em 0;
-    border-left: 1.5px  solid rgb(231, 228, 227);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 40%;
+  align-items: center;
+  padding: 1em 0;
+  border-left: 1.5px solid rgb(231, 228, 227);
 }
 .info-content:first-child {
-    border-left: none;
+  border-left: none;
 }
 .info-1 {
-    width: 100%;
+  width: 100%;
 }
 .info-1 img:first-child {
-    width: 90%;
+  width: 90%;
 }
 .info-content p {
-    width: 90%;
+  width: 90%;
 }
 
-
 @media (max-width: 1000px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-    p {
-        font-size: 0.9rem;
-    }
-    .container-main:last-child {
-        border: none;
-    }
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .container-main:last-child {
+    border: none;
+  }
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 1.25rem;
-    }
-    .first {
-        flex-direction: column;
-    }
-    .container-main:last-child {
-        flex-direction: column;
-    }
-    .info-content {
-        width: 80%;
-        align-self: center;
-        border: none;
-        border-top: 1.5px  solid rgb(231, 228, 227);
-    }
-    .info-content:first-child {
-        border: none;
-    }
+  h1 {
+    font-size: 1.25rem;
+  }
+  .first {
+    flex-direction: column;
+  }
+  .container-main:last-child {
+    flex-direction: column;
+  }
+  .info-content {
+    width: 80%;
+    align-self: center;
+    border: none;
+    border-top: 1.5px solid rgb(231, 228, 227);
+  }
+  .info-content:first-child {
+    border: none;
+  }
 }
 
-@media (max-width: 600px){
-    h1 {
-       font-size: 1.1rem;
-       width: 100%;
-       max-width: 300px;
-       align-self: center;
-    }
-    p{
-        font-size: 0.8rem;
-    }
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 300px;
+    align-self: center;
+  }
+  p {
+    font-size: 0.8rem;
+  }
 }

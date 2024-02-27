@@ -4,15 +4,11 @@ let newsThird = document.querySelector(".container-third");
 let divThirdNews = document.createElement("div");
 divThirdNews.classList.add("news");
 
-let aImgThirdNews = document.createElement("a");
-aImgThirdNews.setAttribute("href", "#");
-
 let imgThirdNews = document.createElement("img");
 imgThirdNews.setAttribute("src", "/image/facebook.jpg");
 imgThirdNews.setAttribute("alt", "facebook-img");
 
-aImgThirdNews.append(imgThirdNews);
-divThirdNews.append(aImgThirdNews);
+divThirdNews.append(imgThirdNews);
 
 divInfoTextThird = document.createElement("div");
 divInfoTextThird.setAttribute("id", "4");
@@ -24,23 +20,16 @@ h3Title.textContent = "Facebook: Dintr-o cameră de cămin de la Harvard la un f
 divInfoTextThird.append(h3Title);
 divThirdNews.append(divInfoTextThird);
 
-
-// newsThird.append(divThirdNews);
 // ------------------------------------------------------------------------------------------------
-//  newsThird = document.querySelector(".container-third");
 
- let divThirdNews2 = document.createElement("div");
+let divThirdNews2 = document.createElement("div");
 divThirdNews2.classList.add("news");
-
- aImgThirdNews = document.createElement("a");
-aImgThirdNews.setAttribute("href", "#");
 
 imgThirdNews = document.createElement("img");
 imgThirdNews.setAttribute("src", "/image/elon-musk.jpg");
 imgThirdNews.setAttribute("alt", "elon-musk-img");
 
-aImgThirdNews.append(imgThirdNews);
-divThirdNews2.append(aImgThirdNews);
+divThirdNews2.append(imgThirdNews);
 
 let divInfoTextThird2 = document.createElement("div");
 divInfoTextThird2.setAttribute("id", "5");
@@ -52,23 +41,16 @@ h3Title.textContent = "Ce avere are Elon Musk. Câţi bani câştigă fondatorul
 divInfoTextThird2.append(h3Title);
 divThirdNews2.append(divInfoTextThird2);
 
-
-// newsThird.append(divThirdNews2);
 // ------------------------------------------------------------------------------------------------
-// newsThird = document.querySelector(".container-third");
 
 let divThirdNews3 = document.createElement("div");
 divThirdNews3.classList.add("news");
-
-aImgThirdNews = document.createElement("a");
-aImgThirdNews.setAttribute("href", "#");
 
 imgThirdNews = document.createElement("img");
 imgThirdNews.setAttribute("src", "/image/nasa.jpg");
 imgThirdNews.setAttribute("alt", "mars-img");
 
-aImgThirdNews.append(imgThirdNews);
-divThirdNews3.append(aImgThirdNews);
+divThirdNews3.append(imgThirdNews);
 
 let divInfoTextThird3 = document.createElement("div");
 divInfoTextThird3.setAttribute("id", "6");
@@ -80,24 +62,16 @@ h3Title.textContent = "NASA caută patru voluntari pentru o simulare de un an a 
 divInfoTextThird3.append(h3Title);
 divThirdNews3.append(divInfoTextThird3);
 
-
-// newsThird.append(divThirdNews3);
-
 // ------------------------------------------------------------------------------------------------
-// newsThird = document.querySelector(".container-third");
 
 let divThirdNews4 = document.createElement("div");
 divThirdNews4.classList.add("news");
-
-aImgThirdNews = document.createElement("a");
-aImgThirdNews.setAttribute("href", "#");
 
 imgThirdNews = document.createElement("img");
 imgThirdNews.setAttribute("src", "/image/bill-gates.jpg");
 imgThirdNews.setAttribute("alt", "bill-gatesimg");
 
-aImgThirdNews.append(imgThirdNews);
-divThirdNews4.append(aImgThirdNews);
+divThirdNews4.append(imgThirdNews);
 
 let divInfoTextThird4 = document.createElement("div");
 divInfoTextThird4.setAttribute("id", "7");
@@ -108,10 +82,6 @@ h3Title.textContent = "Bill Gates explică cum inteligența artificială va schi
 
 divInfoTextThird4.append(h3Title);
 divThirdNews4.append(divInfoTextThird4);
-
-// newsThird.append(divThirdNews4);
-
-
 
 // ---------------------------------------separate into 2 containers-------------------------------------------------
 let thirdOne = document.createElement("div");
