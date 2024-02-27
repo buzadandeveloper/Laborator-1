@@ -1,52 +1,39 @@
-function timeLoaded(){
-    let publishDate = new Date("2024-02-19 11:30");
-    let currentDate = new Date();
-    const timeDiffMinutes = Math.floor((currentDate - publishDate)/(1000 * 60));
-    if(timeDiffMinutes >= 60){
-        const timeDiffHours = Math.floor(timeDiffMinutes / 60);
-        if(timeDiffHours === 1){
-            var timeString = `o oră în urmă`;
-        }
-        else {
-            timeString = `${timeDiffHours} ore în urmă`;
-        }
+function timeLoaded(publishDate, divId) {
+  let currentDate = new Date();
+  const timeDiffMinutes = Math.floor((currentDate - publishDate) / (1000 * 60));
+  let timeString;
+
+  if (timeDiffMinutes >= 60) {
+    const timeDiffHours = Math.floor(timeDiffMinutes / 60);
+    const timeDiffDays = Math.floor(timeDiffHours / 24);
+
+    if (timeDiffHours === 1) {
+      timeString = `o oră în urmă`;
+    } else if (timeDiffDays === 1) {
+      timeString = `o zi în urmă`;
+    } else if (timeDiffDays > 1) {
+      timeString = `${timeDiffDays} zile în urmă`;
+    } else {
+      timeString = `${timeDiffHours} ore în urmă`;
     }
-    else{
-        timeString = `${timeDiffMinutes} minute în urmă`;
-    }       
-    let spanTime = document.createElement("span");
-    spanTime.textContent = timeString;
-    divInfoNews.append(spanTime);
+  } else {
+    timeString = `${timeDiffMinutes} minute în urmă`;
+  }
 
-    let spanTime2 = document.createElement("span");
-    spanTime2.textContent = timeString;
-    divInfoText.append(spanTime2);
-
-    let spanTime3 = document.createElement("span");
-    spanTime3.textContent = timeString;
-    divInfoText2.append(spanTime3);
-
-    let spanTime4 = document.createElement("span");
-    spanTime4.textContent = timeString;
-    divInfoText3.append(spanTime4);
-
-    let spanTime5 = document.createElement("span");
-    spanTime5.textContent = timeString;
-    divInfoTextThird.append(spanTime5);
-
-    let spanTime6 = document.createElement("span");
-    spanTime6.textContent = timeString;
-    divInfoTextThird2.append(spanTime6);
-
-    let spanTime7 = document.createElement("span");
-    spanTime7.textContent = timeString;
-    divInfoTextThird3.append(spanTime7);
-
-    let spanTime8 = document.createElement("span");
-    spanTime8.textContent = timeString;
-    divInfoTextThird4.append(spanTime8);
-
-
-    
+  // Append timeString to the specified div
+  let spanTime = document.createElement("span");
+  spanTime.textContent = timeString;
+  document.getElementById(divId).append(spanTime);
 }
-document.addEventListener("DOMContentLoaded", timeLoaded);
+
+document.addEventListener("DOMContentLoaded", function () {
+  //Define date for the news
+  timeLoaded(new Date("2024-02-26 16:30"), "main");
+  timeLoaded(new Date("2024-02-26 15:30"), "1");
+  timeLoaded(new Date("2024-02-26 14:00"), "2");
+  timeLoaded(new Date("2024-02-26 11:00"), "3");
+  timeLoaded(new Date("2024-02-26 10:30"), "4");
+  timeLoaded(new Date("2024-02-26 9:00"), "5");
+  timeLoaded(new Date("2024-02-26 8:30"), "6");
+  timeLoaded(new Date("2024-02-26 7:00"), "7");
+});

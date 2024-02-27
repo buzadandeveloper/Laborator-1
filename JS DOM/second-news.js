@@ -12,6 +12,7 @@ imgSecondNews.setAttribute("src", "/image/apps-img.jpg");
 imgSecondNews.setAttribute("alt", "apps-img");
 
 let divInfoText = document.createElement("div");
+divInfoText.setAttribute("id", "1");
 divInfoText.classList.add("info-text");
 
 let h2Title = document.createElement("h2");
@@ -26,7 +27,7 @@ divSecondNews.append(divInfoText);
 
 newsSecond.append(divSecondNews);
 // --------------------------------------------------------------------
-newsSecond = document.querySelector(".container-second");
+// newsSecond = document.querySelector(".container-second");
 
 divSecondNews = document.createElement("div");
 divSecondNews.classList.add("news");
@@ -39,6 +40,7 @@ imgSecondNews.setAttribute("src", "/image/chat-gpt-memory.jpg");
 imgSecondNews.setAttribute("alt", "apps-img");
 
 let divInfoText2 = document.createElement("div");
+divInfoText2.setAttribute("id", "2");
 divInfoText2.classList.add("info-text");
 
 h2Title = document.createElement("h2");
@@ -53,7 +55,7 @@ divSecondNews.append(divInfoText2);
 
 newsSecond.append(divSecondNews);
 //-------------------------------------------------------------------------
-newsSecond = document.querySelector(".container-second");
+// newsSecond = document.querySelector(".container-second");
 
 divSecondNews = document.createElement("div");
 divSecondNews.classList.add("news");
@@ -66,6 +68,7 @@ imgSecondNews.setAttribute("src", "/image/chat-gpt2.jpg");
 imgSecondNews.setAttribute("alt", "apps-img");
 
 let divInfoText3 = document.createElement("div");
+divInfoText3.setAttribute("id", "3");
 divInfoText3.classList.add("info-text");
 
 h2Title = document.createElement("h2");

@@ -15,6 +15,7 @@ aImgThirdNews.append(imgThirdNews);
 divThirdNews.append(aImgThirdNews);
 
 divInfoTextThird = document.createElement("div");
+divInfoTextThird.setAttribute("id", "4");
 divInfoTextThird.classList.add("info-text");
 
 let h3Title = document.createElement("h3");
@@ -26,7 +27,7 @@ divThirdNews.append(divInfoTextThird);
 
 // newsThird.append(divThirdNews);
 // ------------------------------------------------------------------------------------------------
- newsThird = document.querySelector(".container-third");
+//  newsThird = document.querySelector(".container-third");
 
  let divThirdNews2 = document.createElement("div");
 divThirdNews2.classList.add("news");
@@ -42,6 +43,7 @@ aImgThirdNews.append(imgThirdNews);
 divThirdNews2.append(aImgThirdNews);
 
 let divInfoTextThird2 = document.createElement("div");
+divInfoTextThird2.setAttribute("id", "5");
 divInfoTextThird2.classList.add("info-text");
 
 h3Title = document.createElement("h3");
@@ -53,7 +55,7 @@ divThirdNews2.append(divInfoTextThird2);
 
 // newsThird.append(divThirdNews2);
 // ------------------------------------------------------------------------------------------------
-newsThird = document.querySelector(".container-third");
+// newsThird = document.querySelector(".container-third");
 
 let divThirdNews3 = document.createElement("div");
 divThirdNews3.classList.add("news");
@@ -69,6 +71,7 @@ aImgThirdNews.append(imgThirdNews);
 divThirdNews3.append(aImgThirdNews);
 
 let divInfoTextThird3 = document.createElement("div");
+divInfoTextThird3.setAttribute("id", "6");
 divInfoTextThird3.classList.add("info-text");
 
 h3Title = document.createElement("h3");
@@ -81,7 +84,7 @@ divThirdNews3.append(divInfoTextThird3);
 // newsThird.append(divThirdNews3);
 
 // ------------------------------------------------------------------------------------------------
-newsThird = document.querySelector(".container-third");
+// newsThird = document.querySelector(".container-third");
 
 let divThirdNews4 = document.createElement("div");
 divThirdNews4.classList.add("news");
@@ -97,6 +100,7 @@ aImgThirdNews.append(imgThirdNews);
 divThirdNews4.append(aImgThirdNews);
 
 let divInfoTextThird4 = document.createElement("div");
+divInfoTextThird4.setAttribute("id", "7");
 divInfoTextThird4.classList.add("info-text");
 
 h3Title = document.createElement("h3");

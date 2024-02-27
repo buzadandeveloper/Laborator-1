@@ -6,6 +6,7 @@ imgNewsMain.setAttribute("src", "/image/neural-link.jpg");
 imgNewsMain.setAttribute("alt", "neural-link-img");
 
 let divInfoNews = document.createElement("div");
+divInfoNews.setAttribute("id", "main");
 divInfoNews.classList.add("info-main");
 
 let aInfoNews = document.createElement("a");
