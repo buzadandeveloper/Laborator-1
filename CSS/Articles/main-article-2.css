@@ -32,15 +32,83 @@ main img {
 table {
     margin-top: 1em;
     background-color: black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 table th {
-    padding: 1em;
+    padding: 0.5em;
     background-color: rgb(241, 251, 255);
 }
 table td {
     padding: 0.5em;
     background-color:rgb(255, 255, 255);
+    vertical-align: top;
 }
 .info-box:last-child {
     margin-bottom: 2em;
 }
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    ul li {
+        font-size: 1rem;
+    }
+    th {
+        font-size: 1rem;
+    }
+    td{
+        font-size: 0.9rem;
+    }
+    
+}
+@media (max-width: 768px) {
+    h1 {
+      font-size: 1.25rem;
+    }
+    ul li {
+        font-size: 0.9rem;
+    }
+    th {
+        font-size: 0.9rem;
+    }
+    td{
+        font-size: 0.9rem;
+    }
+
+}
+@media (max-width: 600px) {
+    h1 {
+      font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    th {
+        font-size: 0.8rem;
+    }
+    td{
+        font-size: 0.8rem;
+    }
+ }
+
+ @media (max-width: 400px) {
+
+    th {
+        font-size: 0.7rem;
+    }
+    td{
+        font-size: 0.7rem;
+    }
+ }
