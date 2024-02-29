@@ -1,6 +1,7 @@
 // Main News Container
 let newsMain = document.querySelector(".container-main");
 
+
 let imgNewsMain = document.createElement("img");
 imgNewsMain.setAttribute("src", "/image/neural-link.jpg");
 imgNewsMain.setAttribute("alt", "neural-link-img");
@@ -28,5 +29,6 @@ newsMain.append(divInfoNews);
 newsMain.addEventListener("click", () => {
   window.location.href = "#";
 })
+
 
 

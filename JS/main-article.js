@@ -1,4 +1,4 @@
-// import {toLink} from './JS/toLinks.js'
+import {toLink} from './toLinks.js'
 let newsList = document.querySelector(".news-container");
 let divNews = document.createElement("div");
 divNews.classList.add("news");
@@ -30,12 +30,6 @@ h3News.textContent = "Sondaj: Ce cred moldovenii despre inteligenÈ›a artificialÄ
 divNews.append(imgNews);
 divNews.append(h3News);
 newsList.append(divNews);
-
-function toLink(divId, link){
-    document.getElementById(divId).addEventListener("click", () => {
-        window.location.href = link;
-    })
-}
 
 toLink("1", "https://www.latimes.com/science");
 toLink("2", "https://www.w3schools.com/css/css_border.asp");
