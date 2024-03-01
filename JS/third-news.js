@@ -69,7 +69,7 @@ divThirdNews4.classList.add("news");
 
 imgThirdNews = document.createElement("img");
 imgThirdNews.setAttribute("src", "/image/bill-gates.jpg");
-imgThirdNews.setAttribute("alt", "bill-gatesimg");
+imgThirdNews.setAttribute("alt", "bill-gates-img");
 
 divThirdNews4.append(imgThirdNews);
 
