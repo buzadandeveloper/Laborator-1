@@ -10,8 +10,7 @@ h1{
     gap: 1em;
 }
 main img {
-   width: 50%;
-   border-radius: 12px;
+   width: 70%;
 }
 .container-1 {
     display: flex;
@@ -68,6 +67,9 @@ table td {
     td{
         font-size: 0.9rem;
     }
+    main img {
+        width: 100%;
+      }
     
 }
 @media (max-width: 768px) {
@@ -83,6 +85,9 @@ table td {
     td{
         font-size: 0.9rem;
     }
+    main img {
+        width: 100%;
+      }
 
 }
 @media (max-width: 600px) {
@@ -101,6 +106,9 @@ table td {
     td{
         font-size: 0.8rem;
     }
+    main img {
+        width: 100%;
+      }
  }
 
  @media (max-width: 400px) {
@@ -111,4 +119,7 @@ table td {
     td{
         font-size: 0.7rem;
     }
+    main img {
+        width: 100%;
+      }
  }
