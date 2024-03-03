@@ -27,13 +27,14 @@ function timeLoaded(publishDate, divId) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  //Define date for the news
-  timeLoaded(new Date("2024-02-27 16:30"), "main");
-  timeLoaded(new Date("2024-02-27 15:30"), "1");
-  timeLoaded(new Date("2024-02-27 14:00"), "2");
-  timeLoaded(new Date("2024-02-27 11:00"), "3");
-  timeLoaded(new Date("2024-02-27 10:30"), "4");
-  timeLoaded(new Date("2024-02-27 9:00"), "5");
-  timeLoaded(new Date("2024-02-27 8:30"), "6");
-  timeLoaded(new Date("2024-02-27 7:00"), "7");
+  // Define date for the news
+  timeLoaded(new Date("2024-03-02T16:30:00"), "main");
+  timeLoaded(new Date("2024-03-01T15:30:00"), "1");
+  timeLoaded(new Date("2024-03-01T14:00:00"), "2");
+  timeLoaded(new Date("2024-03-01T11:00:00"), "3");
+  timeLoaded(new Date("2024-03-01T10:30:00"), "4");
+  timeLoaded(new Date("2024-03-01T09:00:00"), "5");
+  timeLoaded(new Date("2024-03-01T08:30:00"), "6");
+  timeLoaded(new Date("2024-03-01T07:00:00"), "7");
 });
+

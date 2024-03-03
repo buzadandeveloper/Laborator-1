@@ -98,4 +98,3 @@ thirdTwo.append(divThirdNews4);
 newsThird.append(thirdOne);
 newsThird.append(thirdTwo);
 
-console.log(newsThird);

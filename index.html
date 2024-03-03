@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>itNewsMD</title>
+    <link rel="icon" type="image/png" href="/image/logo.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300;900&family=Ubuntu:wght@300;400;700&display=swap"
         rel="stylesheet">
@@ -55,6 +56,30 @@
     <script src="./JS/main-news.js"></script>
     <script src="./JS/second-news.js"></script>
     <script src="./JS/third-news.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDSUElzC1tZnDBBobnv1FJIGmvyk-ck-CQ",
+          authDomain: "webproject-2dd14.firebaseapp.com",
+          projectId: "webproject-2dd14",
+          storageBucket: "webproject-2dd14.appspot.com",
+          messagingSenderId: "769148480454",
+          appId: "1:769148480454:web:ba1cbb307d00179acae0c7",
+          measurementId: "G-8WESWKCDYG"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
+
 
 </html>
