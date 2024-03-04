@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   timeLoaded(new Date("2024-03-03T15:30:00"), "1");
   timeLoaded(new Date("2024-03-03T14:00:00"), "2");
   timeLoaded(new Date("2024-03-03T11:00:00"), "3");
-  timeLoaded(new Date("2024-03-013T10:30:00"), "4");
+  timeLoaded(new Date("2024-03-03T10:30:00"), "4");
   timeLoaded(new Date("2024-03-03T09:00:00"), "5");
   timeLoaded(new Date("2024-03-03T08:30:00"), "6");
   timeLoaded(new Date("2024-03-03T07:00:00"), "7");

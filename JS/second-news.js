@@ -36,7 +36,7 @@ divInfoText2.setAttribute("id", "2");
 divInfoText2.classList.add("info-text");
 
 h2Title = document.createElement("h2");
-h2Title.textContent = "În curând, ChatGPT ar putea memora date şi despre utilizatorii săi";
+h2Title.textContent = "În curând, ChatGPT ar putea memora date despre utilizatorii săi";
 
 divSecondNews.append(imgSecondNews);
 divInfoText2.append(h2Title);
