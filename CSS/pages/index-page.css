@@ -145,7 +145,7 @@ h3 {
 @media (max-width: 480px) {
     h2,
     h3{
-        font-size: 0.85rem;
+        font-size: 0.95rem;
     }
     .info-text span {
         font-size: 0.8rem;

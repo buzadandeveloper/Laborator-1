@@ -74,14 +74,14 @@ main img {
   }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   h1 {
     font-size: 1.1rem;
     width: 100%;
     max-width: 300px;
     align-self: center;
-  }
+  } 
   p {
     font-size: 0.8rem;
   }
-}
+} */

@@ -91,7 +91,7 @@ table td {
 
 }
 @media (max-width: 600px) {
-    h1 {
+    /* h1 {
       font-size: 1.1rem;
     }
     h2 {
@@ -102,7 +102,7 @@ table td {
     }
     th {
         font-size: 0.8rem;
-    }
+    } */
     td{
         font-size: 0.8rem;
     }
@@ -112,13 +112,13 @@ table td {
  }
 
  @media (max-width: 400px) {
-
+/* 
     th {
         font-size: 0.7rem;
     }
     td{
         font-size: 0.7rem;
-    }
+    } */
     main img {
         width: 100%;
       }

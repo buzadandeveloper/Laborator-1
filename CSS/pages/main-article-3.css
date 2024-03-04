@@ -61,7 +61,7 @@ main img {
 
 }
 @media (max-width: 600px) {
-  h1 {
+  /* h1 {
     font-size: 1.1rem;
   }
   h2 {
@@ -69,7 +69,7 @@ main img {
   }
   p {
     font-size: 0.8rem;
-  }
+  } */
   main img {
     width: 100%;
   }
