@@ -61,7 +61,7 @@ h3:hover {
     width: 100%;
   }
   .news-container img {
-    width: 80%;
+    width: 95%;
   }
   .news-container a {
     display: block;
@@ -69,12 +69,14 @@ h3:hover {
   .news {
     flex-direction: column;
     align-items: center;
-    border-right: 1px solid var(--grey-color);
     border-bottom: none;
   }
-
+  .news:nth-child(2){
+    border-right: 1.5px solid rgb(231, 228, 227);
+    height: 95%;
+  }
   .news h3 {
-    width: 75%;
+    width: 95%;
   }
 }
 
@@ -82,4 +84,8 @@ h3:hover {
   h3 {
     font-size: 0.9rem;
   }
+
+}
+@media (max-width:500px) {
+  
 }

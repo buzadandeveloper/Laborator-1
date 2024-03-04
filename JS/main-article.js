@@ -14,10 +14,19 @@ h3News.textContent = "Neuralink a realizat primul implant în creierul uman";
 divNews.append(imgNews);
 divNews.append(h3News);
 newsList.prepend(divNews);
-//--------------------------------------------------------------------------------------------
+
+
+
+
 divNews = document.createElement("div");
 divNews.classList.add("news");
 divNews.setAttribute("id", "2");
+newsList.append(divNews);
+
+//--------------------------------------------------------------------------------------------
+divNews = document.createElement("div");
+divNews.classList.add("news");
+divNews.setAttribute("id", "3");
 
 imgNews = document.createElement("img");
 imgNews.setAttribute("src", "/image/chat-gpt2.jpg");
@@ -32,5 +41,5 @@ divNews.append(h3News);
 newsList.append(divNews);
 
 toLink("1", "https://www.latimes.com/science");
-toLink("2", "https://www.w3schools.com/css/css_border.asp");
+toLink("3", "https://www.w3schools.com/css/css_border.asp");
 

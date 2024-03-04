@@ -39,3 +39,10 @@ thirdTwo.append(createNews("7", "/image/bill-gates.jpg", "bill-gates-img", "Bill
 newsThird.append(thirdOne);
 newsThird.append(thirdTwo);
 
+function toLink(divId, link){
+    document.getElementById(divId).addEventListener("click", () => {
+        window.location.href = link;
+    })
+}
+
+toLink("4", "#");

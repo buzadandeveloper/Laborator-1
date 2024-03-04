@@ -72,6 +72,27 @@ main img {
   .info-content:first-child {
     border: none;
   }
+    .container-main {
+      width: 90%;
+    }
+  
 }
-
-
+@media (max-width: 500px) {
+  main img {
+    width: 100%;
+  }
+  .info-1 {
+  width: 100%;
+}
+.info-1 img:first-child {
+  width: 100%;
+}
+.info-content p {
+  width: 100%;
+}
+}
+@media (max-width:400px) {
+  .container-main {
+    width: 90%;
+  }
+}

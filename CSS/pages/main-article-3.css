@@ -18,7 +18,7 @@ main img {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  width: 90%;
+  width: 100%;
 }
 .info-box-1 img {
   align-self: center;
@@ -51,7 +51,7 @@ main img {
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.45rem;
   }
   ul li {
       font-size: 0.9rem;
@@ -59,7 +59,9 @@ main img {
   main img {
     width: 100%;
   }
-
+  .container-main {
+    width: 80%;
+  }
 }
 @media (max-width: 600px) {
   main img {
