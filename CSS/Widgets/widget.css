@@ -7,9 +7,6 @@
 .news {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid rgb(231, 228, 227);
-  margin-bottom: 1em;
-  padding-bottom: 1em;
 }
 .news:last-child {
   border: 0;
@@ -25,13 +22,13 @@
   cursor: pointer;
   margin-bottom: 0.785em;
 }
+.news:nth-child(2){
+  border-bottom: 1.5px solid rgb(231, 228, 227);
+}
 h2 {
   text-align: center;
   margin: 0.5em 0;
   margin-bottom: 1em;
-}
-.news-container h3 {
-  margin-bottom: 0.5em;
 }
 h3 {
   cursor: pointer;
@@ -70,6 +67,8 @@ h3:hover {
     flex-direction: column;
     align-items: center;
     border-bottom: none;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
   }
   .news:nth-child(2){
     border-right: 1.5px solid rgb(231, 228, 227);
