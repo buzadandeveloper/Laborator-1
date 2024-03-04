@@ -56,7 +56,7 @@ table td {
         font-size: 1.2rem;
     }
     p {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
     ul li {
         font-size: 1rem;
@@ -91,18 +91,6 @@ table td {
 
 }
 @media (max-width: 600px) {
-    /* h1 {
-      font-size: 1.1rem;
-    }
-    h2 {
-        font-size: 1rem;
-    }
-    p {
-      font-size: 0.8rem;
-    }
-    th {
-        font-size: 0.8rem;
-    } */
     td{
         font-size: 0.8rem;
     }
@@ -112,13 +100,6 @@ table td {
  }
 
  @media (max-width: 400px) {
-/* 
-    th {
-        font-size: 0.7rem;
-    }
-    td{
-        font-size: 0.7rem;
-    } */
     main img {
         width: 100%;
       }

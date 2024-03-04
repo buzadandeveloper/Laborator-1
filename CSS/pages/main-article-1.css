@@ -47,7 +47,7 @@ h1{
         font-size: 1.2rem;
     }
     p {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
     ul li {
         font-size: 1rem;
@@ -62,19 +62,5 @@ h1{
         font-size: 0.9rem;
     }
 }
-@media (max-width: 600px) {
-    /* h1 {
-      font-size: 1.1rem;
-    }
-    h2 {
-        font-size: 1rem;
-    }
-    p {
-      font-size: 0.8rem;
-    }
-    ul li {
-        font-size: 0.8rem;
-    } */
-  }
-  
+
 

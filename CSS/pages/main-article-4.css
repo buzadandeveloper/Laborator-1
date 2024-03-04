@@ -41,7 +41,7 @@ main img {
       font-size: 1.2rem;
   }
   p {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
   }
 
 }
@@ -54,15 +54,6 @@ main img {
   }
 }
 @media (max-width: 600px) {
-  /* h1 {
-    font-size: 1.1rem;
-  }
-  h2 {
-      font-size: 1rem;
-  }
-  p {
-    font-size: 0.8rem;
-  } */
   main img {
     width: 100%;
   }

@@ -46,7 +46,7 @@ main img {
     font-size: 1.5rem;
   }
   p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
   .container-main:last-child {
     border: none;
@@ -55,7 +55,7 @@ main img {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
   }
   .first {
     flex-direction: column;
@@ -74,14 +74,4 @@ main img {
   }
 }
 
-/* @media (max-width: 600px) {
-  h1 {
-    font-size: 1.1rem;
-    width: 100%;
-    max-width: 300px;
-    align-self: center;
-  } 
-  p {
-    font-size: 0.8rem;
-  }
-} */
+
