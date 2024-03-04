@@ -1,6 +1,7 @@
 h1 {
   margin: 1em 0;
 }
+
 .container-main h2 {
   text-align: start;
 }
@@ -13,7 +14,7 @@ h1 {
 main img {
   width: 80%;
 }
-.info-box-1 {
+.info-box {
   display: flex;
   flex-direction: column;
   gap: 1em;

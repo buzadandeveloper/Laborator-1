@@ -16,7 +16,8 @@ main img {
     display: flex;
     justify-content: space-between;
 }
-.info-box-1 {
+
+.info-box {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,9 +26,7 @@ main img {
 .info-box-1 img {
     align-self: center;
 }
-.container-2 {
-    flex-direction: column;
-}
+
 table {
     margin-top: 1em;
     background-color: black;
