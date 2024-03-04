@@ -24,6 +24,7 @@
 }
 .news:nth-child(2){
   border-bottom: 1.5px solid rgb(231, 228, 227);
+  margin: 1em 0;
 }
 h2 {
   text-align: center;
