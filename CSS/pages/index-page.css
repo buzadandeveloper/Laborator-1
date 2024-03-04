@@ -101,7 +101,9 @@ h3 {
     display: flex;
     gap: 1em;
 }
-
+span {
+    color: var(--grey-color);
+}
 /* Responsive */
 @media (max-width: 1200px) {
     h1 {
