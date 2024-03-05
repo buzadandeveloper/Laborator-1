@@ -2,7 +2,7 @@ import { toLink } from "./toLinks.js";
 
 let newsSecond = document.querySelector(".container-second");
 
-// Funcție pentru crearea și adăugarea de știri secundare
+
 function createSecondaryNews(id, imgPaths, altText, titleText) {
   let divSecondNews = document.createElement("div");
   divSecondNews.classList.add("news");
@@ -24,12 +24,11 @@ function createSecondaryNews(id, imgPaths, altText, titleText) {
   return divSecondNews;
 }
 
-// Crearea și adăugarea știrilor secundare
+
 newsSecond.append(createSecondaryNews("1", "/image/apps-img.jpg", "apps-img", "Ce funcție obligatorie WhatsApp are de implementat"));
 newsSecond.append(createSecondaryNews("2", "/image/chat-gpt-memory.jpg", "chat-gpt-img","În curând, ChatGPT ar putea memora date despre utilizatorii săi"));
 newsSecond.append(createSecondaryNews("3", "/image/chat-gpt2.jpg", "chat-gpt-img","Sondaj: Ce cred moldovenii despre inteligența artificială"));
 
-// Adăugarea linkurilor pentru fiecare știre secundară
 toLink("1", "#");
 toLink("2", "#");
 toLink("3", "#");

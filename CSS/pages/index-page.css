@@ -152,5 +152,7 @@ span {
     .info-text span {
         font-size: 0.9rem;
     }
-
+    .container-second .news:last-child{
+        display: none;
+    }
 }

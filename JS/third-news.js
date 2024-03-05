@@ -1,3 +1,4 @@
+import { toLink } from "./toLinks.js";
 // Third News Container
 let newsThird = document.querySelector(".container-third");
 
@@ -39,10 +40,7 @@ thirdTwo.append(createNews("7", "/image/bill-gates.jpg", "bill-gates-img", "Bill
 newsThird.append(thirdOne);
 newsThird.append(thirdTwo);
 
-function toLink(divId, link){
-    document.getElementById(divId).addEventListener("click", () => {
-        window.location.href = link;
-    })
-}
-
 toLink("4", "#");
+toLink("5", "#");
+toLink("6", "#");
+toLink("7", "#");
