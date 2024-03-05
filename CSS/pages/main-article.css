@@ -75,7 +75,9 @@ main img {
     .container-main {
       width: 90%;
     }
-  
+   .info-content {
+    width: 95%;
+  }
 }
 @media (max-width: 500px) {
   main img {

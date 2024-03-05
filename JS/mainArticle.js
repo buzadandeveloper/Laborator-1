@@ -16,7 +16,7 @@ divNews.append(h3News);
 newsList.prepend(divNews);
 
 
-
+//--------------------------------------------------------------------------------------------
 
 divNews = document.createElement("div");
 divNews.classList.add("news");

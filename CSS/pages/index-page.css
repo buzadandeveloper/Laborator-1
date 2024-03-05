@@ -145,6 +145,9 @@ span {
 
 }
 @media (max-width: 480px) {
+    h1{
+        font-size: 1.35rem;
+    }
     h2,
     h3{
         font-size: 0.90rem;

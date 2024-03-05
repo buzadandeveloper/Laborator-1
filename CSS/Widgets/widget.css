@@ -57,6 +57,7 @@ h3:hover {
     flex-direction: row;
     align-items: center;
     width: 100%;
+    padding: 0;
   }
   .news-container img {
     width: 95%;
