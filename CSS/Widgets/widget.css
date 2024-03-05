@@ -73,9 +73,7 @@ h3:hover {
     padding-bottom: 1em;
   }
   .news:nth-child(2){
-    border: 1.5px solid rgb(231, 228, 227);
-    /* background-color: rgb(231, 228, 227);
-    width: 3px; */
+    border-right: 1.5px solid rgb(231, 228, 227);
     height: 95%;
   }
   .news h3 {
