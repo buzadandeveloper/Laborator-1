@@ -1,11 +1,12 @@
-let containerContent = document.querySelector(".container-content");
+const containerContent = document.querySelector(".container-content");
 
-let containerAds = document.createElement("div");
+const containerAds = document.createElement("div");
 containerAds.classList.add("container-ads");
 
 let iArrowLeft = document.createElement("i");
 iArrowLeft.classList.add("fa-solid");
 iArrowLeft.classList.add("fa-angle-left");
+iArrowLeft.setAttribute("id", "left");
 containerContent.append(iArrowLeft);
 
 function createAds(id, imgPaths, altText, titleText){
@@ -16,6 +17,7 @@ function createAds(id, imgPaths, altText, titleText){
     let imgAds = document.createElement("img");
     imgAds.setAttribute("src", imgPaths);
     imgAds.setAttribute("alt", altText);
+    imgAds.setAttribute("draggable", "fasle");
     divAds.append(imgAds);
 
     let divText = document.createElement("div");
@@ -40,4 +42,8 @@ createAds("6", "./image/imageAds/bosch.jpg", "bosch-img", "Bosch: Primăvara în
 let iArrowRight = document.createElement("i");
 iArrowRight.classList.add("fa-solid");
 iArrowRight.classList.add("fa-angle-right");
+iArrowRight.setAttribute("id", "right");
 containerContent.append(iArrowRight);
+
+
+
