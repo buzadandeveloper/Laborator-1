@@ -69,4 +69,9 @@ header img {
         margin-bottom: 0.5em;
 
     }
+    .container-nav{
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}
 }
