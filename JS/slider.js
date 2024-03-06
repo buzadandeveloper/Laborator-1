@@ -53,14 +53,27 @@ let firstAdsWidth = firstAdd.clientWidth + 16;
 
 const draggingStart = (e) => {
     isDragging = true;
-    startX = e.touches ? e.touches[0].pageX : e.pageX;
+    // startX = e.touches ? e.touches[0].pageX : e.pageX;
+    if(e.touches){
+        startX = e.touches[0].pageX;
+    }
+    else{
+        startX = e.pageX;
+    }
     startScrollLeft = slider.scrollLeft;
 }
 
 const dragging = (e) => {
     if(!isDragging) return;
     e.preventDefault();
-    const currentX = e.touches ? e.touches[0].pageX : e.pageX;
+    // const currentX = e.touches ? e.touches[0].pageX : e.pageX;
+    let currentX;
+    if(e.touches){
+         currentX = e.touches[0].pageX;
+    }
+    else{
+         currentX = e.pageX;
+    }
     slider.scrollLeft = startScrollLeft - (currentX - startX);
 }
 
