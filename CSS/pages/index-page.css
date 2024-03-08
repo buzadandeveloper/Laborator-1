@@ -158,4 +158,7 @@ span {
     .container-second .news:last-child{
         display: none;
     }
+    .container-second{
+        gap: 1em;
+    }
 }
