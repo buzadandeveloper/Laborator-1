@@ -118,7 +118,7 @@ span {
 @media (max-width: 768px) {
     .container-main {
         flex-direction: column;
-        gap: 0;
+        gap: 0.5em;
     }
     .info-main {
         gap: 0;
