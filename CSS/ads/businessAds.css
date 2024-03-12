@@ -17,10 +17,12 @@
     grid-auto-columns: calc((100% / 3) - 9em);
     overflow: hidden;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
     gap: 1em;
     width: 100%;
     max-width: 980px;
     margin: 0 auto;
+   
 }
 .container-ads img {
     width: 100%;
@@ -36,8 +38,17 @@
     max-width: 980px;
     margin: 0 auto;
 }
+.container-add-ads h1 {
+    color: black;
+    cursor: default;
+}
+.container-add-ads a {
+    color: var(--grey-color-1);
+}
+.container-add-ads a:hover {
+    color: var(--blue-color);
+}
 .container-ads.dragging .ads {
-    /* cursor: grab; */
     user-select: none;
     
 }
