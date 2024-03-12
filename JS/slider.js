@@ -1,55 +1,12 @@
-// const slider = document.querySelector(".container-ads");
-// const firstAdd = slider.querySelectorAll(".ads")[0];
-// const arrowBtns = document.querySelectorAll(".container-content i");
-
-// let isDragging = false, startX, startScrollLeft;
-// let firstAdsWidth = firstAdd.clientWidth + 16;
-
-// const draggingStart = (e) => {
-//     isDragging = true;
-    
-//     startX = e.pageX;
-//     startScrollLeft = slider.scrollLeft;
-// }
-
-// const dragging = (e) => {
-//    if(!isDragging) return;
-// //    slider.classList.add("dragging");
-//    e.preventDefault();
-//     slider.scrollLeft = startScrollLeft - (e.pageX - startX);
-// }
-
-// const draggingStop = () => {
-//     isDragging = false;
-//     //slider.classList.remove("dragging");
-
-// }
-
-// slider.addEventListener("mousedown", draggingStart);
-// slider.addEventListener("mousemove", dragging);
-// slider.addEventListener("mouseup", draggingStop);
-
-// slider.addEventListener("touchstart", draggingStart);
-// slider.addEventListener("touchmove", dragging);
-// slider.addEventListener("touchend", draggingStop);
-
-// arrowBtns.forEach(e => {
-//     e.addEventListener("click", () => {
-//         if(e.id == "left"){
-//             slider.scrollLeft -= firstAdsWidth;
-//         }
-//         else{
-//             slider.scrollLeft += firstAdsWidth;
-//         }
-//     })
-// })
-
 const slider = document.querySelector(".container-ads");
 const firstAdd = slider.querySelectorAll(".ads")[0];
 const arrowBtns = document.querySelectorAll(".container-content i");
 
 let isDragging = false, startX, startScrollLeft;
-let firstAdsWidth = firstAdd.clientWidth + 16;
+let firstAdsWidth = firstAdd.clientWidth ;
+
+
+
 
 const draggingStart = (e) => {
     isDragging = true;
@@ -75,6 +32,7 @@ const dragging = (e) => {
          currentX = e.pageX;
     }
     slider.scrollLeft = startScrollLeft - (currentX - startX);
+    setTimeout(() => showActiveIcons(), 1);
 }
 
 const draggingStop = () => {
@@ -89,13 +47,22 @@ slider.addEventListener("touchstart", draggingStart);
 slider.addEventListener("touchmove", dragging);
 slider.addEventListener("touchend", draggingStop);
 
-arrowBtns.forEach(e => {
-    e.addEventListener("click", () => {
-        if(e.id == "left"){
+let scrollWidth = slider.scrollWidth - slider.clientWidth;
+const showActiveIcons = () => {
+    const greyColor = getComputedStyle(document.documentElement).getPropertyValue('--grey-color');
+    arrowBtns[0].style.color = slider.scrollLeft == 0 ? greyColor : "rgb(39, 38, 38)";  
+    arrowBtns[1].style.color = slider.scrollLeft == scrollWidth ? greyColor : "rgb(39, 38, 38)";
+        
+}
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        if (btn.id === "left") {
             slider.scrollLeft -= firstAdsWidth;
-        }
-        else{
+        } else {
             slider.scrollLeft += firstAdsWidth;
         }
+        showActiveIcons();  
     })
-})
+});
+
+

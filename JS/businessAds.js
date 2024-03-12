@@ -1,13 +1,29 @@
 const containerContent = document.querySelector(".container-content");
 
+const containerElements = document.createElement("div");
+containerElements.classList.add("container-elements");
+
 const containerAds = document.createElement("div");
 containerAds.classList.add("container-ads");
+
+const addAds = document.createElement("div");
+addAds.classList.add("container-add-ads");
+const h1TextAds = document.createElement("h1");
+h1TextAds.textContent = "Business";
+const aPostAdd = document.createElement("a");
+aPostAdd.textContent = "Plasează publicitatea";
+aPostAdd.setAttribute("href", "#");
+
+addAds.append(h1TextAds);
+addAds.append(aPostAdd);
+containerContent.append(addAds);
 
 let iArrowLeft = document.createElement("i");
 iArrowLeft.classList.add("fa-solid");
 iArrowLeft.classList.add("fa-angle-left");
 iArrowLeft.setAttribute("id", "left");
-containerContent.append(iArrowLeft);
+iArrowLeft.classList.toggle("disabled", true);
+containerElements.append(iArrowLeft);
 
 function createAds(id, imgPaths, altText, titleText){
     let divAds = document.createElement("div");
@@ -17,7 +33,7 @@ function createAds(id, imgPaths, altText, titleText){
     let imgAds = document.createElement("img");
     imgAds.setAttribute("src", imgPaths);
     imgAds.setAttribute("alt", altText);
-    imgAds.setAttribute("draggable", "fasle");
+    imgAds.setAttribute("draggable", "false");
     divAds.append(imgAds);
 
     let divText = document.createElement("div");
@@ -30,7 +46,7 @@ function createAds(id, imgPaths, altText, titleText){
     containerAds.append(divAds);
 }
 
-containerContent.append(containerAds);
+containerElements.append(containerAds);
 
 createAds("1", "./image/imageAds/iute-credit.jpg", "iute-credit-img", "iute Moldova E-Shopping Week: Săptămâna de Reduceri și Cashback Ⓟ");
 createAds("2", "./image/imageAds/asus-rog.jpg", "asus-rog-img", "Asus ROG Zephyrus G16 de la Asus ROG - cel mai bun notebook de gaming Ⓟ");
@@ -43,7 +59,9 @@ let iArrowRight = document.createElement("i");
 iArrowRight.classList.add("fa-solid");
 iArrowRight.classList.add("fa-angle-right");
 iArrowRight.setAttribute("id", "right");
-containerContent.append(iArrowRight);
+iArrowRight.classList.toggle("disabled", true);
+containerElements.append(iArrowRight);
+containerContent.append(containerElements);
 
 
 
