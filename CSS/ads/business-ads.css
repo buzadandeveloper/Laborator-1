@@ -44,9 +44,11 @@
 }
 .container-add-ads a {
     color: var(--grey-color-1);
+    
 }
 .container-add-ads a:hover {
     color: var(--blue-color);
+    transition: 0.2s ease;
 }
 .container-ads.dragging .ads {
     user-select: none;

@@ -12,7 +12,7 @@ const h1TextAds = document.createElement("h1");
 h1TextAds.textContent = "Business";
 const aPostAdd = document.createElement("a");
 aPostAdd.textContent = "Plasează publicitatea";
-aPostAdd.setAttribute("href", "#");
+aPostAdd.setAttribute("href", "../HTML/add-advert.html");
 
 addAds.append(h1TextAds);
 addAds.append(aPostAdd);
