@@ -63,12 +63,12 @@
                 <div class="credit-card">
                     <div class="card-number">
                         <label for="ccn">Credit Card</label>
-                        <input type="text" required maxlength="16" id="ccn" placeholder="xxxx xxxx xxxx xxxx">
+                        <input type="text" name="ccn" required maxlength="16" id="ccn" placeholder="xxxx xxxx xxxx xxxx">
                     </div>
                     <div class="exp-cvv">
                         <div class="expiration-data">
-                            <label for="exp-date">Exp. Data</label>
-                            <input type="text" name="exp-date" id="exp-date"  required maxlength="5"  placeholder="10/25">
+                            <label for="exp-data">Exp. Data</label>
+                            <input type="text" name="exp-data" id="exp-data"  required maxlength="5"  placeholder="10/25">
                         </div>
                         <div class="cvv-data">
                             <label for="cvv">CVV</label>
@@ -79,21 +79,18 @@
                 <div class="advert-details">
                     <label for="title">Adauga titlul</label>
                     <div class="title-advert">
-                        <!-- <input type="text" id="title"> -->
-                        
-                        <textarea name="text" id="title" cols="25" rows="3"></textarea>
+                        <textarea name="text-title" id="title" cols="25" rows="3"></textarea>
                     </div>
                     <div class="link-advert">
                         <label for="details">Adaugă detaliile reclamei</label>
-                        <input type="text" id="link">
-                        
+                        <input type="text" name="link" id="link">
                     </div>
                     <div class="advert-photo">
                         <label for="photo">Adaugă coperta</label>
-                        <input type="file" id="photo">
+                        <input type="file" name="file" id="photo">
                     </div>
                 </div>
-                <button class="sbt-btn">Trimite</button>
+                <button type="submit" class="sbt-btn">Trimite</button>
             </form>
         </div>
     </main>
