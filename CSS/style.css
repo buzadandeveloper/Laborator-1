@@ -17,11 +17,11 @@ body {
 }
 h1 {
     font-size: 1.8rem;
-    color: var(--dark-blue-color);
+    color: var(--blue-color);
     font-family: "Lora", sans-serif;
 }
 h2 {
-    color: var(--dark-blue-color);
+    color: var(--blue-color);
     font-family: "Lora", sans-serif;
     font-size: 1.4rem;
 }

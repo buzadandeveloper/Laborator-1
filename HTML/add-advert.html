@@ -43,8 +43,8 @@
             <h2>Adăugați datele pentru reclamă</h2>
             <form action="#">
                 <div class="person-name">
-                    <input type="text" id="f-name" name="f-name" placeholder="Nume">
-                    <input type="text" id="s-name" name="s-name" placeholder="Prenume">
+                    <input type="text" id="f-name" name="f_name" placeholder="Nume">
+                    <input type="text" id="s-name" name="s_name" placeholder="Prenume">
                 </div>
                 <div class="person-contact">
                         <input type="tel" name="phone" id="phone" pattern="/+373[0-9]{8}" placeholder="Număr de telefon">                        
@@ -83,14 +83,8 @@
         <p> &#169; Copyright 2024 Buza Dan</p>
     </footer>
     <script src="/JS/hambMenu.js"></script>
-    <script>
-        document.getElementById('phone').addEventListener('focus', function (e) {
-            let input = e.target;
-            if (!input.value.startsWith('+373')) {
-                input.value = '+373';
-            }
-        });
-    </script>
+    <script src="/JS/addAdvert.js"></script>
+    <script src="/JS/logoToIndex.js"></script>
 </body>
 
 </html>
