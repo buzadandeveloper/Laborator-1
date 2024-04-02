@@ -42,50 +42,34 @@
         <div class="container-input">
             <h2>Adăugați datele pentru reclamă</h2>
             <form action="#">
-                <div class="f-name-container">
-                    <label for="f-name">Nume</label>
-                    <input type="text" id="f-name" name="f-name">
+                <div class="person-name">
+                    <input type="text" id="f-name" name="f-name" placeholder="Nume">
+                    <input type="text" id="s-name" name="s-name" placeholder="Prenume">
                 </div>
-                <div class="s-name-container">
-                    <label for="s-name">Prenume</label>
-                    <input type="text" id="s-name" name="s-name">
-                </div>
-                <div class="contact-person">
-                    <div class="phone-number">
-                        <label for="phone">Număr de telefon</label>
-                        <input type="tel" name="phone" id="phone" pattern="/+373[0-9]{8}">
-                    </div>
-                    <div class="email">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
+                <div class="person-contact">
+                        <input type="tel" name="phone" id="phone" pattern="/+373[0-9]{8}" placeholder="Număr de telefon">                        
+                        <input type="email" name="email" id="email" placeholder="Email">
                 </div>
                 <div class="credit-card">
                     <div class="card-number">
                         <label for="ccn">Credit Card</label>
                         <input type="text" name="ccn" required maxlength="16" id="ccn" placeholder="xxxx xxxx xxxx xxxx">
                     </div>
-                    <div class="exp-cvv">
-                        <div class="expiration-data">
-                            <label for="exp-data">Exp. Data</label>
-                            <input type="text" name="exp-data" id="exp-data"  required maxlength="5"  placeholder="10/25">
-                        </div>
-                        <div class="cvv-data">
-                            <label for="cvv">CVV</label>
-                            <input type="text" name="cvv" id="cvv"  required maxlength="3" placeholder="123">
-                        </div>
+                    <div class="data-cvv">
+                        <input type="text" name="exp-data" id="exp-data"  required maxlength="5"  placeholder="10/25">
+                        <input type="text" name="cvv" id="cvv"  required maxlength="3" placeholder="CVV">
                     </div>
                 </div>
                 <div class="advert-details">
-                    <label for="title">Adauga titlul</label>
                     <div class="title-advert">
+                        <label for="title">Adauga titlul</label>
                         <textarea name="text-title" id="title" cols="25" rows="3"></textarea>
                     </div>
                     <div class="link-advert">
-                        <label for="details">Adaugă detaliile reclamei</label>
+                        <label for="details">Adaugă link-ul reclamei</label>
                         <input type="text" name="link" id="link">
                     </div>
-                    <div class="advert-photo">
+                    <div class="advert-photo" id="ph">
                         <label for="photo">Adaugă coperta</label>
                         <input type="file" name="file" id="photo">
                     </div>

@@ -1,12 +1,124 @@
 .container-input {
-    background-color: rgb(227, 225, 225);
     width: 50%;
     max-width: 980px;
     margin: 0 auto;
     display:flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 3em;
 }
 h2 {
     text-align: center;
+    color: var(--blue-color);
+}
+input,
+textarea{
+    outline: none;
+    height: 3em;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    font-family: "Ubuntu", sans-serif;
+}
+.person-name {
+    display: flex;
+    gap: 0.5em;
+    margin:1em 0;
+}
+.person-name input {
+    width: 8em;
+    gap: 0;
+}
+.person-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.person-contact input {
+    width: 16.5em;
+}
+.card-number {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+.card-number input {
+    width: 16.5em;
+}
+.data-cvv {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+.data-cvv input{
+    width: 8em;
+}
+.advert-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.title-advert textarea {
+    width: 16.5em;
+    outline: none;
+}
+.title-advert,
+.link-advert {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.link-advert input {
+    width: 16.5em;
+}
+.advert-photo {
+    display: flex;
+    flex-direction: column;
+}
+.sbt-btn {
+    display: flex;
+    margin: 0 auto;
+} 
+.advert-photo input[type = file] {
+    min-width: 100%;
+    min-height: 100%;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    display: none;
+    cursor: pointer;
+    
+}
+#ph{
+    background-color: var(--blue-color);
+    border-radius: 10px;
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    height: 20px;   
+    margin-bottom: 1em;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+}
+#ph label {
+    cursor: pointer;    
+}
+button {
+    padding: 0.5em 2em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+}
+button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out .1s;
 }
