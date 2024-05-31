@@ -5,9 +5,6 @@ const arrowBtns = document.querySelectorAll(".container-content i");
 let isDragging = false, startX, startScrollLeft;
 let firstAdsWidth = firstAdd.clientWidth ;
 
-
-
-
 const draggingStart = (e) => {
     isDragging = true;
     startX = e.touches ? e.touches[0].pageX : e.pageX;
